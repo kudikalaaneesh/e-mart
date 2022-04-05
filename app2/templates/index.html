@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<div>
+    <form method="POST" class="post-form"  enctype="multipart/form-data">
+        {% csrf_token %}
+        <center>
+        {{ form.as_p}}
+        <input  type="submit" value="save">
+            </center>
+    </form>
+</div>
+
+</body>
+</html>

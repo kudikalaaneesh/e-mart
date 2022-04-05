@@ -1,0 +1,54 @@
+{% load static %}
+{% csrf_token %}
+{% load bootstrap_icons %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link  rel="stylesheet"   href="{%  static 'card.css'%}"/>
+</head>
+<body>
+
+
+<div class="h">
+    <center>
+
+  {% for i in numbers %}
+ <div class="card_1">
+
+         <div>
+             <img src="{% static  'Aneesh.png' %}" height="200px"  width="250px"/>
+         </div>
+
+        <div class="card_inner">
+
+            <table  cellpadding="3px" >
+
+                 <td><label>Name_of_item :</label></td><br></br>
+                 <td>item.id</td>
+                 <tr><td><label>price</label></td>
+                 <td><select> <option>select price</option>
+                 <option name="price_2">45</option>
+                 <option name="price_1">50</option></select></td></tr>
+                 <tr><td><label>Queantity</label></td>
+                <td> <input type="number" name="qnt"></input></td></tr>
+                 <tr><td><label>Total peice price x quality</label></td>
+                 <td><input></input></td></tr>
+                 <tr><td><label>old</label></td>
+                 <td> <strike>old_price</strike></td></td></tr>
+
+
+            </table>
+            <button name="add" >Add to cart</button>
+            <button name="buy">BUY now</button>
+        </div>
+
+
+ </div>
+    {% endfor %}
+    </center>
+</div>
+
+</body>
+</html>

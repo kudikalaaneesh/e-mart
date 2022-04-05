@@ -1,0 +1,39 @@
+.nan
+{
+    color:black;
+
+
+
+
+
+}
+
+.nan form
+{
+ width:500px;
+ height: 450px;
+    background-color: darkgray;
+
+}
+.nan form input{
+     width: 200px;
+    height: 30px;
+    border-radius: 7px;
+}
+.nan form button {
+    width: 80px;
+    height: 30px;
+   background-color: lightskyblue;
+}
+.nan form button:hover{
+    background-color: white;
+}
+
+
+
+.n
+{
+text-shadow: 2px 2px  black;
+    color:whitesmoke;
+    background-color: darkcyan;
+}

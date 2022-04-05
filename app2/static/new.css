@@ -1,0 +1,16 @@
+.new
+{
+background-color:snow;
+
+
+}
+.new input{
+height: 35px;
+width: 500px;
+
+}
+.new button{
+    background-color:orange;
+    height: 35px;
+    width: 100px;
+}

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}"/>
+</head>
+<body>
+<div class="nan">
+
+    <center>
+    <h1>  </h1>
+        <form method="POST" >
+ <fieldset>
+
+          <div class="card" >
+          <div class="n">  <h1>Login</h1></div>
+              <br></br>
+              {% csrf_token %}
+              <label>Username : </label>
+              <input  type="text" placeholder="username" id="username"  name="username" required maxlength="50"></input><br></br>
+              <label type="standard">Password : </label>
+              <input type="password" placeholder="password" id="password_1" name="password_1"></input><br></br>
+              <br></br>
+
+             <input type="submit" value="login"> </input> <br></br>
+
+              <strong> u dont have an account plese signup</strong> <br></br>
+              <a href="http://127.0.0.1:8000/Signup/?" <P> <h3>Signup</h3></P></a>
+          </div>
+</fieldset>
+        </form>
+    </center>
+
+
+</div>
+
+</body>
+</html>

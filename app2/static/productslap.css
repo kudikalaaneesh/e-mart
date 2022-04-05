@@ -1,0 +1,36 @@
+.lap{
+    padding: 10px;
+    box-shadow: rgb(228, 146, 209);
+    text-align: center;
+    display: flex;
+    padding:20px;
+    background-color: rgb(246, 249, 252);
+    box-sizing: border-box;
+    height: 400px;
+    width: 1000px;
+    margin-outside: 7px;
+    box-shadow: black;
+    border-block-end: black;
+    border-end-start-radius: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-bottom-width: thin;
+    box-sizing: border-box;
+    padding: 16px;
+
+
+    margin-bottom: 5px;
+}
+
+.lap_in{
+    background-color: rgb(168, 212, 239);
+}
+
+.lap_in button{
+    background-color: rgb(231, 202, 59);
+    height:50px ;
+    width:100px;
+}
+.lap_in button:hover{
+    background-color: orange;
+}

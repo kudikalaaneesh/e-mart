@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newmobiles</title>
+    <link  rel="stylesheet"   href="{%  static 'mobiles.css'%}"/>
+</head>
+<body>
+<div >
+    <center>
+        {% for i in red %}
+<div class= "mobile">
+           <div class="mob">
+               <img src="i.image" />
+           </div>
+           <div class="mobile_in">
+            <table  cellpadding="3px" >
+
+                <td><label>Name_of_item :</label></td><br></br>
+                <td>{{i.name}}</td>
+                <tr><td><label>model :</label></td>
+                <td><h3>{{i.modelname}}</h3></td>
+                <tr><td><label>product discription :</label></td>
+               <td> <p>{{i.discription}}</P></td></tr>
+                <tr><td><label>price :</label></td>
+                <td><strong>{{i.price }}</strong></td></tr>
+                <tr><td><label>old</label></td>
+                <td> <strike>old_price</strike></td></td></tr>
+
+
+           </table>
+
+          <button name="add" >Add to cart</button>
+
+          <button name="buy">BUY now</button>
+        </div>
+    </div>
+        {% endfor %}
+    </center>
+
+</div>
+</body>
+</html>

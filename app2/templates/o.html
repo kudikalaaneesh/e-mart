@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet"   href="{%  static 'productslap.css'%}"/>
+</head>
+<body>
+    <div>
+      <center>
+        {% for i in dd %}
+        <div class="lap">
+        <div>
+      <img src="  {{ i.addimage }}" />
+        </div>
+      <div class="lap_in">
+
+        <table  cellpadding="3px" >
+
+             <td><label>Name_of_item :</label></td><br></br>
+             <td>{{i.device_name}}</td>
+             <tr><td><label>model :</label></td>
+             <td><h3>{{i.device_model}}</h3></td>
+             <tr><td><label>product discription :</label></td>
+            <td> <p>{{i.device_dis}}</P></td></tr>
+             <tr><td><label>price :</label></td>
+             <td><p>{{i.price}}</p></td></tr>
+             <tr><td><label>old :</label></td>
+             <td> <strike>old_price</strike></td></td></tr>
+
+
+        </table>
+        <button name="add" >Add to cart</button>
+        <button name="buy">BUY now</button>
+    
+    </div>
+       
+  </div>
+      {% endfor %}
+    </center>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+.ane {
+ background-color: rgb(106, 130, 158);
+
+
+}
+.ane form
+{
+ text-align: center;
+ height:800px;
+ width:400px;
+ background-color: aliceblue;
+ 
+
+}
+.ane input{
+    width: 200px;
+   height: 30px;
+   border-radius: 7px;
+}
+
+
+
+.ane fieldset
+{
+ text-align: center;
+ height:800px;
+ width:400px;
+ background-color: lightblue;
+}
