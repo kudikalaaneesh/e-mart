@@ -6,4 +6,4 @@ admin.site.register(products)
 admin.site.register(mobile)
 admin.site.register(oneplus)
 admin.site.register(redmi)
-# Register your models here.
+

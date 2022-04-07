@@ -28,9 +28,22 @@
 
 .lap_in button{
     background-color: rgb(231, 202, 59);
-    height:50px ;
-    width:100px;
+    
+    height: 45px;
+    width: 100px;
+    border-radius:50px;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease 0s;
+    margin-left: 20px;
 }
 .lap_in button:hover{
     background-color: orange;
+    height: 45px;
+    width: 100px;
+    border-radius:50px;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease 0s;
+    margin-left: 20px;
 }

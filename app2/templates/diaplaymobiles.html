@@ -1,4 +1,5 @@
-{% load static %}
+ {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,13 @@
     <title>newmobiles</title>
     <link  rel="stylesheet"   href="{%  static 'mobiles.css'%}"/>
 </head>
+
 <body>
+   
+    
 <div >
     <center>
+        
         {% for i in mob %}
 <div class= "mobile">
            <div class="mob">
@@ -26,7 +31,7 @@
                 <tr><td><label>price :</label></td>
                 <td><strong>{{i.price }}</strong></td></tr>
                 <tr><td><label>old</label></td>
-                <td> <strike>old_price</strike></td></td></tr>
+                <td> <strike>old_price_rat</strike></td></td></tr>
    
    
            </table>
@@ -40,5 +45,7 @@
     </center>
 
 </div>
+
 </body>
+
 </html>

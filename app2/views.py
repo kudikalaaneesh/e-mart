@@ -1,7 +1,8 @@
-
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .forms import  mobiles
 from django.http import HttpResponse,HttpResponseRedirect
-
+from django.contrib.auth import logout
 from django.shortcuts import render,redirect
 from .forms import EmployeeForm
 from .forms import Signups,oneplusForm,redmiform
@@ -74,7 +75,7 @@ def gg(request):
     return render(request,'new.html')
 
 
-
+@login_required
 def products(request):
     if request.method=='POST':
         form=admin(request.POST)
@@ -152,5 +153,10 @@ def red(request):
     return render(request, 'showredmi.html', {'red': red})
 
 
+def logout_view(request):
+    logout(request)
+    return redirect('Login/')
+    
 
-
+def bas(request):
+    return render(request,"home.html")
