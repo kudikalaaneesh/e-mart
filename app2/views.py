@@ -151,6 +151,6 @@ def red(request):
     red = models.redmi.objects.all().values()
     return render(request, 'showredmi.html', {'red': red})
 
-gggggggggggggg
+
 
 
